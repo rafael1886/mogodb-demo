@@ -26,7 +26,7 @@ class MongodbDemoApplicationTests {
     repository.deleteAll();
 
     repository.save(new Country("China", 1382050000));
-    repository.save(new Country("India", 1313210000));
+    repository.save(new Country("India ", 1313210000));
     repository.save(new Country("USA", 324666000));
     repository.save(new Country("Indonesia", 260581000));
     repository.save(new Country("Brazil", 207221000));

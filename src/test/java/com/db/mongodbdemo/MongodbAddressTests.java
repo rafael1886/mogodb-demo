@@ -2,8 +2,8 @@ package com.db.mongodbdemo;
 
 import static org.junit.Assert.assertEquals;
 
-import com.db.mongodbdemo.book.Address;
-import com.db.mongodbdemo.book.AddressService;
+import com.db.mongodbdemo.address.Address;
+import com.db.mongodbdemo.address.AddressService;
 import java.util.stream.IntStream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

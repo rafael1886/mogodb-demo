@@ -3,8 +3,8 @@ package com.db.mongodbdemo;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.assertEquals;
 
-import java.util.Optional;
-import org.junit.Before;
+import com.db.mongodbdemo.country.Country;
+import com.db.mongodbdemo.country.CountryRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -50,17 +50,14 @@ class MongodbDemoApplicationTests {
 
   @Test
   public void setsIdOnSave() {
-
     Country nigeria = repository.save(new Country("Nigeria", 186988000));
     assertThat(nigeria.getId()).isNotNull();
   }
 
   @Test
   public void findOneCountry() {
-
     Example<Country> example = Example.of(new Country("India", 1313210000));
-
-    Optional<Country> country = repository.findOne(example);
-    assertThat(country.get().getName()).isEqualTo("India");
+    Country country = repository.findOne(example).orElseThrow();
+    assertThat(country.getName()).isEqualTo("India");
   }
 }

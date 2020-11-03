@@ -1,4 +1,4 @@
-package com.db.mongodbdemo.book;
+package com.db.mongodbdemo.address;
 
 import java.util.List;
 import lombok.RequiredArgsConstructor;

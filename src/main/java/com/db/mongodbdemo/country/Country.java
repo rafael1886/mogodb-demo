@@ -1,4 +1,4 @@
-package com.db.mongodbdemo;
+package com.db.mongodbdemo.country;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

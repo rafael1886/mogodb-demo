@@ -1,4 +1,4 @@
-package com.db.mongodbdemo;
+package com.db.mongodbdemo.country;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
